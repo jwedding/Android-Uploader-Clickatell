@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\build\intermediates\pre-dexed\debug\mongo-2.10.1-a1f3c40f362e572ce3834dc496dcc2bc1a2cae01.jar"
+        jar="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\libs\mongo-2.10.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="09e2c2835b0126a48183ed42129e53b6eb6e259b"/>
+    <item
+        dex="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\build\intermediates\pre-dexed\debug\smsj-20051126-4b1be024279962a3752ec0a81701131970e1574e.jar"
+        jar="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\libs\smsj-20051126.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="92f681cf9e69386b530e1e8030f65e0f0992a70a"/>
+    <item
+        dex="C:\Users\DSLT3\Desktop\Nightscout\compiled\dexcom-uploader-SMS1.1\app\build\intermediates\pre-dexed\debug\mongo-2.10.1-d68d1ce733d301c8c9cba6e236ea1475c56e61ef.jar"
+        jar="C:\Users\DSLT3\Desktop\Nightscout\compiled\dexcom-uploader-SMS1.1\app\libs\mongo-2.10.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="09e2c2835b0126a48183ed42129e53b6eb6e259b"/>
+    <item
+        dex="C:\Users\DSLT3\Desktop\Nightscout\compiled\dexcom-uploader-SMS1.1\app\build\intermediates\pre-dexed\debug\smsj-20051126-c8f80950df570767d3bdab8dfaef400f4b9460a8.jar"
+        jar="C:\Users\DSLT3\Desktop\Nightscout\compiled\dexcom-uploader-SMS1.1\app\libs\smsj-20051126.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="92f681cf9e69386b530e1e8030f65e0f0992a70a"/>
+
+</pre-dex-items>

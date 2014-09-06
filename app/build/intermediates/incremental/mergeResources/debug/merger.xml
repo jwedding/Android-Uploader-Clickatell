@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res" >
+            <file
+                name="ic_action_warning"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\drawable-hdpi\ic_action_warning.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon36x36"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\drawable-ldpi\icon36x36.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="adb"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\layout\adb.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="menu"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\menu\menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="hello" >Hello World, DemoActivity!
+                </string>
+                <string name="self_destruct" >Close It
+                </string>
+                <string name="app_name" >G4 Connector
+                </string>
+
+                <style name="ButtonText" >
+                    <item name="android:layout_width">
+fill_parent
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:textColor">
+#ffffff
+                    </item>
+                    <item name="android:gravity">
+center
+                    </item>
+                    <item name="android:layout_margin">
+3dp
+                    </item>
+                    <item name="android:textSize">
+30dp
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:shadowColor">
+#000000
+                    </item>
+                    <item name="android:shadowDx">
+1
+                    </item>
+                    <item name="android:shadowDy">
+1
+                    </item>
+                    <item name="android:shadowRadius">
+2
+                    </item>
+                </style>
+            </file>
+            <file
+                name="device_filter"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\xml\device_filter.xml"
+                qualifiers=""
+                type="xml" />
+            <file
+                name="preferences"
+                path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\main\res\xml\preferences.xml"
+                qualifiers=""
+                type="xml" />
+        </source>
+        <source path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\build\generated\res\rs\debug" />
+        <source path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\build\generated\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\DSLT3\Desktop\Nightscout\Uploader 1.2\app\src\debug\res" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+            android:title="API Upload (REST)"
+            android:key="EnableRESTUpload"
+            android:disableDependentsState="false"
+            android:summary="The REST API is an alternative to direct mongodb upload">
+    </SwitchPreference>
+    <EditTextPreference
+            android:dependency="EnableRESTUpload"
+            android:title="API Base URL"
+            android:key="API Base URL"
+            android:dialogTitle="Enter Base API URL"
+            android:defaultValue="http://{YOUR-API-SERVER}/api"
+            android:dialogMessage="This only the base URL, the uploader will automatically append /entries for the POST">
+    </EditTextPreference>
+    <SwitchPreference
+            android:title="MongoDB Upload"
+            android:key="EnableMongoUpload"
+            android:disableDependentsState="false"
+            android:summary="If you're using MongoLab and Azure this should be enabled">
+    </SwitchPreference>
+    <EditTextPreference
+            android:dependency="EnableMongoUpload"
+            android:title="MongoDB URI"
+            android:key="MongoDB URI"
+            android:dialogTitle="Enter MongoDB URI"
+            android:dialogMessage="Replace example values in {}'s with your correct values"
+            android:defaultValue="mongodb://{user}:{password}@{host}.mongolab.com:{11111}/{database}">
+    </EditTextPreference>
+    <EditTextPreference
+            android:dependency="EnableMongoUpload"
+            android:title="Collection Name"
+            android:key="Collection Name"
+            android:dialogTitle="Enter Collection Name"
+            android:dialogMessage="This is the name of the collection where the CGM data will be stored">
+    </EditTextPreference>
+    <SwitchPreference
+            android:title="Wifi Hack"
+            android:key="EnableWifiHack"
+            android:disableDependentsState="false"
+            android:defaultValue="true"
+            android:summaryOn="Wifi will be disabled if there is a timeout (poor wifi signal/access point), this will allow mobile data to be used instead"
+            android:summaryOff="The uploader won't try to disable Wifi even if there is a timeout"
+            >
+    </SwitchPreference>
+    <SwitchPreference
+            android:title="2 Days at Startup"
+            android:key="InitialTwoDayUpload"
+            android:disableDependentsState="false"
+            android:defaultValue="true"
+            android:summaryOn="When the upload application first starts it will upload ~2.5 days of data"
+            android:summaryOff="The uploader won't try upload old data"
+            >
+    </SwitchPreference>
+    <SwitchPreference
+            android:title="Clickatell SMS Enabled"
+            android:key="SMS_ENABLE"
+            android:disableDependentsState="false"
+            android:defaultValue="false"
+            android:summaryOn="The uploader will send SMS messages"
+            android:summaryOff="The uploader won't send SMS messages"
+            >
+    </SwitchPreference>
+
+    <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="Your Clickatell username"
+            android:key="CLICKATELL_USERNAME"
+            android:persistent="true"
+            />
+    <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="Your Clickatell password"
+            android:key="CLICKATELL_PASSWORD"
+            android:inputType="textPassword"
+            android:persistent="true"
+            />
+    <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="Your Cilckatell API ID"
+            android:key="CLICKATELL_APIID"
+            android:persistent="true"
+            />
+    <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="Your Clickatell Phone Number"
+    		android:inputType="number" 
+    		android:digits="0123456789"
+            android:key="SMS_SENDER"
+            android:persistent="true"
+            />
+        <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="Recipients"
+            android:dialogMessage="One or more recipients separated by commas. e.g.,  12123456789,12129998877"
+            android:key="SMS_RECEIVER"
+            android:inputType="number" 
+            android:digits="0123456789,"
+            android:persistent="true"
+            />
+    
+            <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="BG too high threshold"
+            android:key="SMSBgHigh"
+            android:defaultValue="120"
+            android:persistent="true"
+    		android:inputType="number" 
+            />
+            <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="BG too low threshold"
+            android:key="SMSBgLow"
+            android:defaultValue="85"
+            android:persistent="true"
+    		android:inputType="number" 
+            />
+    <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="Out of range SMS Interval"
+            android:key="DATA_POINT_SMS_INTERVAL"
+            android:defaultValue="3"
+            android:persistent="true"
+    		android:inputType="number" 
+    		android:dialogMessage="Set the interval at which an SMS should be sent when a data point is out of range"
+            />
+    <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="Within Range SMS Interval"
+            android:key="IN_RANGE_INTERVAL"
+            android:defaultValue="3"
+            android:persistent="true"
+    		android:inputType="number" 
+    		android:dialogMessage="Set the interval at which an SMS should be sent when a data point is within range"
+            />
+    <EditTextPreference
+            android:dependency="SMS_ENABLE"
+            android:title="No Data SMS Interval"
+            android:key="NO_DATA_INTERVAL"
+            android:defaultValue="3"
+            android:persistent="true"
+    		android:inputType="number" 
+    		android:dialogMessage="Set the interval at which an SMS should be sent when not data is recieved"
+            />
+    
+
+    private static final Integer SMSBgHigh = 120; // Will send text when above this value
+    private static final Integer SMSBgLow = 85; // Will send text when below this value
+    
+    
+</PreferenceScreen><!-- From: file:/C:/Users/DSLT3/Desktop/Nightscout/Uploader%201.2/app/src/main/res/xml/preferences.xml -->
